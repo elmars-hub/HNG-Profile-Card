@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(29, 80%, 58%);
   --first-color-light: hsl(29, 80%, 70%);
   --black-color: hsl(29, 16%, 10%);
   --text-color: hsl(29, 8%, 65%);
-  --body-color: hsl(29, 100%, 99%);
+  --body-color: hsl(29, 100%, 96%);
 }
 
+/*========== Global Styles ==========*/
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +37,7 @@ a {
   color: inherit;
 }
 
+/*========== Profile Card ==========*/
 .profile-card {
   position: relative;
   width: 300px;
@@ -66,7 +67,7 @@ a {
 
 .card-title {
   color: var(--text-color);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 300;
   margin: 10px 0;
 }
@@ -78,13 +79,7 @@ a {
   margin: 10px 0;
 }
 
-.card-location {
-  color: var(--text-color);
-  font-size: 0.8rem;
-  font-weight: 400;
-  margin: 2px 0;
-}
-
+.card-location,
 .card-email {
   color: var(--text-color);
   font-size: 0.8rem;
@@ -99,6 +94,7 @@ a {
   margin: 5px 0;
 }
 
+/*========== Social Links ==========*/
 .profile-card .social-links a {
   text-decoration: none;
   margin: 5px;
@@ -115,7 +111,7 @@ a {
   background-color: var(--first-color);
   padding: 0.6rem;
   border-radius: 3rem;
-  text-align: initial; /* Center the text */
+  text-align: initial;
   box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3);
   position: absolute;
   left: 0;
@@ -148,15 +144,17 @@ a {
 .card__social-text {
   display: block;
   color: var(--black-color);
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
   font-weight: 500;
 }
+
 .card__social-list {
   display: inline-flex;
   column-gap: 0.8rem;
   transform: rotate(135deg);
   transform-origin: 18px 17px;
 }
+
 .card__social-link {
   display: inline-flex;
   background-color: var(--first-color-light);
@@ -165,6 +163,7 @@ a {
   padding: 6px;
   border-radius: 50%;
 }
+
 .card__social-text,
 .card__social-list {
   position: absolute;
@@ -173,11 +172,12 @@ a {
   right: 0;
   padding-left: 2.8rem;
 }
+
 .card__social-text {
   top: 0.4rem;
 }
 
-/* Rotate social */
+/*========== Social Animations ==========*/
 .animation .card__social-control {
   transform: rotate(-135deg);
 }
@@ -200,6 +200,7 @@ a {
     transform: rotate(1deg);
   }
 }
+
 /* Down animation */
 .card__social.down-animation {
   animation: down-animation 1s ease-in-out forwards;
@@ -219,7 +220,7 @@ a {
   }
 }
 
-/* Small screens (phones, 480px and below) */
+/*========== Responsive Design ==========*/
 @media screen and (max-width: 480px) {
   body {
     height: 100vh;
