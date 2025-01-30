@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="./image/icons8-mario-48.png" />
+
+    <title>Martin Ifeanyi || Profile Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-card">
+        <img
+          src="./image/profile2.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+          class="card-image"
+        />
+        <h2 class="card-name" data-testid="fullName">Martin Ifeanyi</h2>
+        <p class="card-title" data-testid="jobTitle">Front-End Developer</p>
+        <p class="card-bio" data-testid="shortBio">
+          Passionate about creating interactive web experiences and crafting
+          innovative solutions.
+        </p>
+        <p class="card-location" data-testid="currentLocation">
+          Lagos, Nigeria
+        </p>
+        <p class="card-email" data-testid="emailAddress">
+          martinsifeanyi247@gmail.com
+        </p>
+
+        <div class="card__social" id="card-social">
+          <div class="card__social-control">
+            <!-- Toggle button -->
+            <div class="card__social-toggle" id="card-toggle">
+              <i class="ri-add-line"></i>
+            </div>
+
+            <span class="card__social-text">My Socials</span>
+
+            <!-- Card social -->
+            <ul class="card__social-list">
+              <a href="https://github.com/elmars-hub" class="card__social-link">
+                <i class="ri-github-line"></i>
+              </a>
+
+              <a
+                href="https://x.com/0xx_eth"
+                target="_blank"
+                class="card__social-link"
+              >
+                <i class="ri-twitter-line"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- <p id="utc-time" data-testid="currentTimeUTC">Time:</p> -->
+      </div>
+      <!-- Link JavaScript file -->
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
