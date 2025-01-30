@@ -107,7 +107,7 @@ a {
 }
 
 .card__social {
-  width: 150px;
+  width: 190px;
   background-color: var(--first-color);
   padding: 0.6rem;
   border-radius: 3rem;
@@ -164,7 +164,6 @@ a {
   border-radius: 50%;
 }
 
-.card__social-text,
 .card__social-list {
   position: absolute;
   top: 0;
@@ -174,7 +173,11 @@ a {
 }
 
 .card__social-text {
+  position: absolute;
   top: 0.4rem;
+  left: 0;
+  right: 0;
+  padding-left: 3.5rem;
 }
 
 /*========== Social Animations ==========*/
