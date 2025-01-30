@@ -208,3 +208,48 @@ a {
     transform: rotate(-1deg);
   }
 }
+
+/* Small screens (phones, 480px and below) */
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px 15px 35px;
+  }
+
+  .card-name {
+    font-size: 1.2rem;
+  }
+
+  .card-title,
+  .card-bio,
+  .card-location,
+  .card-email {
+    font-size: 0.75rem;
+  }
+
+  .card__social {
+    width: 155px;
+    bottom: 5.5rem;
+  }
+
+  .card__social-toggle {
+    font-size: 1rem;
+    padding: 0.65rem;
+  }
+
+  .card__social-list {
+    column-gap: 0.5rem;
+  }
+
+  .card__social-link {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+}
