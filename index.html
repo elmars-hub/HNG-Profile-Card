@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--=============== REMIXICONS ===============-->
+    <!-- Remix Icons -->
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
     />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="./image/icons8-mario-48.png" />
 
     <title>Martin Ifeanyi || Profile Card</title>
@@ -17,12 +21,15 @@
   <body>
     <div class="container">
       <div class="profile-card">
+        <!-- Profile Image -->
         <img
           src="./image/profile2.jpg"
           alt="Profile Picture"
-          data-testid="profilePicture"
           class="card-image"
+          data-testid="profilePicture"
         />
+
+        <!-- Profile Details -->
         <h2 class="card-name" data-testid="fullName">Martin Ifeanyi</h2>
         <p class="card-title" data-testid="jobTitle">Front-End Developer</p>
         <p class="card-bio" data-testid="shortBio">
@@ -36,35 +43,49 @@
           martinsifeanyi247@gmail.com
         </p>
 
+        <!-- Social Links -->
         <div class="card__social" id="card-social">
           <div class="card__social-control">
-            <!-- Toggle button -->
-            <div class="card__social-toggle" id="card-toggle">
+            <!-- Toggle Button -->
+            <div
+              class="card__social-toggle"
+              id="card-toggle"
+              data-testid="toggleButton"
+            >
               <i class="ri-add-line"></i>
             </div>
 
-            <span class="card__social-text">My Socials</span>
+            <span class="card__social-text" data-testid="socialText"
+              >My Socials</span
+            >
 
-            <!-- Card social -->
+            <!-- Social Links List -->
             <ul class="card__social-list">
-              <a href="https://github.com/elmars-hub" class="card__social-link">
+              <a
+                href="https://github.com/elmars-hub"
+                class="card__social-link"
+                data-testid="socialLinks"
+              >
                 <i class="ri-github-line"></i>
               </a>
-
               <a
                 href="https://x.com/0xx_eth"
-                target="_blank"
                 class="card__social-link"
+                target="_blank"
+                data-testid="socialLinks"
               >
                 <i class="ri-twitter-line"></i>
               </a>
             </ul>
           </div>
         </div>
-        <!-- <p id="utc-time" data-testid="currentTimeUTC">Time:</p> -->
+
+        <!-- UTC Time -->
+        <p class="card-time" id="utc-time" data-testid="currentTimeUTC"></p>
       </div>
-      <!-- Link JavaScript file -->
-      <script src="script.js"></script>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>

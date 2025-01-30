@@ -73,23 +73,30 @@ a {
 
 .card-bio {
   color: var(--text-color);
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   margin: 10px 0;
 }
 
 .card-location {
   color: var(--text-color);
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 2px 0;
 }
 
 .card-email {
   color: var(--text-color);
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 2px 0;
+}
+
+.card-time {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 5px 0;
 }
 
 .profile-card .social-links a {
@@ -104,11 +111,11 @@ a {
 }
 
 .card__social {
-  width: 155px;
+  width: 150px;
   background-color: var(--first-color);
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 3rem;
-  text-align: initial;
+  text-align: initial; /* Center the text */
   box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3);
   position: absolute;
   left: 0;
@@ -137,6 +144,7 @@ a {
   position: relative;
   z-index: 10;
 }
+
 .card__social-text {
   display: block;
   color: var(--black-color);
@@ -223,18 +231,18 @@ a {
     position: relative;
     width: 90%;
     max-width: 300px;
-    padding: 15px 15px 35px;
+    padding: 15px 12px 35px;
   }
 
   .card-name {
     font-size: 1.2rem;
   }
 
-  .card-title,
   .card-bio,
   .card-location,
   .card-email {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 
   .card__social {
